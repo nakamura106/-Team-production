@@ -9,6 +9,9 @@
 #include "Input.h"
 #include "Camera.h"
 
+//仮include
+#include"Sound/SoundManager.h"
+
 
 int WINAPI WinMain(HINSTANCE hinstance,
 	HINSTANCE hPrevInstance,
@@ -16,7 +19,7 @@ int WINAPI WinMain(HINSTANCE hinstance,
 	INT nCmdShow)
 {
 	// エンジンの初期化
-	if (InitEngine(1920, 1080, "エアホッケ―") == false)
+	if (InitEngine(1920, 1080, "アゲアゲバード") == false)
 	{
 		return 0;
 	}
@@ -29,7 +32,13 @@ int WINAPI WinMain(HINSTANCE hinstance,
 	FbxManagera manager;
 	FBXMeshData player;
 
+	SoundManager::Instance()->RegisterTitleSound();
+	
 	player = manager.LoadFbxMesh("Res/tori.fbx");
+	
+	//仮追加
+	
+	//ここまで
 
 	while (true)
 	{
@@ -55,7 +64,10 @@ int WINAPI WinMain(HINSTANCE hinstance,
 		{
 			UpdateInput();
 			KeyStateUpdate();
+	
 			
+
+
 			camera.Update();
 			camera.Move();
 			camera.MouseRotate();
@@ -85,6 +97,8 @@ int WINAPI WinMain(HINSTANCE hinstance,
 	}
 
 	manager.ReleaseFbxMesh(&player);
+	SoundManager::Instance()->ReleaseTitleSound();
+
 	//ReleaseTexture(NULL);
 
 	// エンジン終了
