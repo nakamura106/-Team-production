@@ -33,7 +33,7 @@ int WINAPI WinMain(HINSTANCE hinstance,
 	FBXMeshData player;
 
 	SoundManager::Instance()->RegisterTitleSound();
-	
+	SoundManager::Instance()->SoundBGM();
 	player = manager.LoadFbxMesh("Res/tori.fbx");
 	
 	//‰¼’Ç‰Á

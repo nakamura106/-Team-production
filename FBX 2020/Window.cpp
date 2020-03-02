@@ -25,7 +25,6 @@ LRESULT CALLBACK WindowProc(HWND window_handle, UINT message_id, WPARAM wparam, 
 
 bool MakeWindow(int width, int height, const char* title)
 {
-	HWND hWnd;
 	WNDCLASSEX window_class = {
 		sizeof(WNDCLASSEXA),			// 構造体のサイズ
 		CS_HREDRAW | CS_VREDRAW,		// クラスのスタイル
