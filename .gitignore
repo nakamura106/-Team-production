@@ -10,24 +10,6 @@
 *.userosscache
 *.sln.docstates
 
-!/lib
-
-!/vs2015
-
-!/x86
-
-!/debug
-
-!/.libfbxsdk/libfbxsdk.dll
-
-!/.libfbxsdk/libfbxsdk.lib
-
-!/.libfbxsdk/libfbxsdk.pdb
-
-!/.libfbxsdk-md/libfbxsdk-md.lib
-
-!/.libfbxsdk-mt/libfbxsdk-mt.lib
-
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -42,6 +24,8 @@ mono_crash.*
 [Rr]eleases/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
+x64/
+x86/
 bld/
 [Bb]in/
 [Oo]bj/
