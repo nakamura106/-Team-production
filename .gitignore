@@ -348,3 +348,21 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+!/lib
+
+!/vs2015
+
+!/x86
+
+!/debug
+
+!/.libfbxsdk/libfbxsdk.dll
+
+!/.libfbxsdk/libfbxsdk.lib
+
+!/.libfbxsdk/libfbxsdk.pdb
+
+!/.libfbxsdk-md/libfbxsdk-md.lib
+
+!/.libfbxsdk-mt/libfbxsdk-mt.lib
